@@ -59,17 +59,17 @@
                                             </td>
                                             <td class="text-center">
                                                 <a href="{{ route('pemesanan.show', $item->id) }}"
-                                                     class="btn btn-outline-linkedin btn-sm">
+                                                    class="btn btn-outline-linkedin btn-sm">
                                                     <i class="ti-new-window"></i>
                                                     Detail</a>
-                                                    
-                                                <form onsubmit="return confirm('apakah anda yakin ingin menghapus?')" class="d-inline"
-                                                    action="{{ route('pemesanan.destroy', $item->id) }}" method="POST">
+
+                                                <form onsubmit="return confirm('apakah anda yakin ingin menghapus?')"
+                                                    class="d-inline" action="{{ route('pemesanan.destroy', $item->id) }}"
+                                                    method="POST">
                                                     @method('delete')
                                                     @csrf
-                                                    <button type="submit"
-                                                    class="btn btn-outline-danger btn-sm">
-                                                       Hapus
+                                                    <button type="submit" class="btn btn-outline-danger btn-sm">
+                                                        Hapus
                                                     </button>
                                                 </form>
                                         </tr>

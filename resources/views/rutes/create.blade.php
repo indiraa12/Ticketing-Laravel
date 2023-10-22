@@ -27,11 +27,11 @@
                                     <input type="date" value="{{ date('Y-m-d') }}" name="tanggal_berangkat"
                                         class="form-control" id="tanggalBerangkat" placeholder="Tanggal Berangkat">
                                 </div>
-                                <div class="form-group">
+                                {{-- <div class="form-group">
                                     <label for="exampleInputUsername1">Nomer Kursi</label>
                                     <input type="text" value="" name="kode_kursi"
                                         class="form-control" id="kode_kursi" placeholder="Nomer Kursi">
-                                </div>
+                                </div> --}}
                                 <div class="form-group">
                                     <label for="exampleInputUsername1">Total Bayar</label>
                                     <input type="number" name="total_bayar" value="{{ $rute->harga }}"

@@ -62,6 +62,7 @@ class PaymentController extends Controller
         $data['jam_cekin'] = Carbon::parse($data['tanggal_berangkat'])->hour(6)->minute(0)->second(0);
         $data['jam_berangkat'] = Carbon::parse($data['tanggal_berangkat'])->hour(8)->minute(0)->second(0);
         $data['total_bayar'] = $request->total_bayar;
+        $data['status'] = true;
 
         // check tanggal berangkat
         if ($data['tanggal_berangkat'] < date('Y-m-d')) {
